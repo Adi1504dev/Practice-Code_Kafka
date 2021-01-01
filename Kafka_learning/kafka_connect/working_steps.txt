@@ -1,0 +1,4 @@
+kafka-topics --zookeeper 127.0.0.1:2181 --create --topic twitter_status_connect --partitions 3 --replication-factor 1
+kafka-topics --zookeeper 127.0.0.1:2181 --create --topic twitter_delete_connect --partitions 3 --replication-factor 1
+cd C:\Users\Aditya Singh\IdeaProjects\Kafka_learning\kafka_connect
+connect-standalone connect-standalone.properties Twitter.properties
